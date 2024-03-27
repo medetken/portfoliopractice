@@ -1,0 +1,44 @@
+body {
+  background-image: url("/img/Square\ line\ paper\ template.jpeg");
+  background-repeat: repeat;
+  font-family: "Indie Flower", cursive;
+}
+
+.ribbon-menu {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+}
+.ribbon-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.ribbon-menu ul li {
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.ribbon-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.ribbon-menu.active ul {
+  display: block;
+  position: absolute;
+  right: 0;
+}
