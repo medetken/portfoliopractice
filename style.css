@@ -42,3 +42,88 @@ body {
   position: absolute;
   right: 0;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.top,
+.bottom {
+  display: flex;
+  width: 100%;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 10px; /* Adjust padding as needed */
+  font-size: large;
+}
+
+img {
+  width: 150%; /* Adjust image size as needed */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect */
+  margin-bottom: 20px;
+
+  transform: rotate(-5deg); /* Tilt effect for the Polaroid look */
+  max-width: 300px; /* Adjust based on preference */
+}
+
+/* Polaroid effect */
+img {
+  background: white;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust the layout of sections */
+.top .left,
+.top .right,
+.bottom .left,
+.bottom .right {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  flex-direction: column;
+}
+.overlay-text {
+  position: relative; /* Minimum requirement for z-index to work */
+  z-index: 10; /* Ensure it's above the image; the exact value depends on context */
+
+  /* Add any additional styling here */
+}
+
+#skills {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#skills h2 {
+  color: #333; /* Dark gray text for the heading */
+  margin-bottom: 15px;
+}
+
+#skills ul {
+  list-style-type: none; /* Removes the default list bullet */
+  padding: 0;
+}
+
+#skills li {
+  background-color: #fff; /* White background for each skill */
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-left: 5px solid #3498db; /* Colored bar on the left for some flair */
+}
+
+a {
+  color: #007bff; /* Initial link color */
+  text-decoration: none; /* Optional: removes the underline */
+}
+
+a:hover {
+  color: #0056b3; /* Link color on hover */
+  text-decoration: underline; /* Optional: adds an underline on hover */
+}
